@@ -113,7 +113,7 @@ div.cache_graph_value{
     
         <div class="module">
         <table summary="Modèles disponibles dans l&#39;application Categories.">
-        <caption><a href="#" class="section">Clients</a></caption>
+        <caption><a href="" class="section">Clients</a></caption>
         
             <tbody><tr>
             

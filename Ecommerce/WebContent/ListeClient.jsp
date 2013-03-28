@@ -24,8 +24,8 @@
    </div>
    <div class="center_content">
    <div id="categoryRightColumn">
-      <table id="productTable">
-    <% ArrayList<Client> listeClient= ( ArrayList)request.getAttribute("listeClient");%>
+     <table id="productTable">
+    <%  out.println("la liste des clients"); ArrayList<Client> listeClient= ( ArrayList)request.getAttribute("listeClient");%>
     <% for(int i=0;i<listeClient.size();i++)
    { 	Client p=(Client)listeClient.get(i); 
  %>
@@ -35,7 +35,7 @@
 <%    out.println(p.getCin());  %>                            <br>
                             <span class="smallText"><%    out.println(p.getNom());   out.println(p.getPrenom());  %></span>
                         </td>
-                        <td class="white"><%    out.println(p.getEmail()+ "DH");  %></td>
+                        <td class="white"><%    out.println(p.getEmail());  %></td>
                                                 <td class="white"><%    out.println(p.getTel()+ "DH");  %></td>
                                                 <td class="white"><%    out.println(p.getDateInscription()+ "DH");  %></td>
                         
